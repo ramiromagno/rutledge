@@ -18,6 +18,7 @@ library(tidyverse)
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/rutledge)](https://CRAN.R-project.org/package=rutledge)
+[![R-CMD-check](https://github.com/ramiromagno/rutledge/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ramiromagno/rutledge/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `{rutledge}` is an R data package that provides real-time PCR raw fluorescence
