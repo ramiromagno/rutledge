@@ -24,5 +24,5 @@ RoxygenNote: 7.3.1
 Roxygen: list(markdown = TRUE)
 Imports: 
     tibble
-URL: https://github.com/ramiromagno/rutledge
+URL: https://github.com/ramiromagno/rutledge, https://rmagno.eu/rutledge/
 BugReports: https://github.com/ramiromagno/rutledge/issues
