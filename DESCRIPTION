@@ -3,7 +3,7 @@ Type: Package
 Title: Real-Time PCR Data Sets by Rutledge et al. (2004)
 Version: 0.1.0
 Authors@R: c(
-    person(given = "Ramiro", family = "Magno", email = "ramiro.magno@gmail.com",
+    person(given = "Ramiro", family = "Magno", email = "rmagno@pattern.institute",
     role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5226-3441")),
     person("Pattern Institute",
     role = c("cph", "fnd"))
