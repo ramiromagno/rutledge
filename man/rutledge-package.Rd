@@ -11,6 +11,7 @@ Real-time quantitative polymerase chain reaction (qPCR) data by Rutledge et al. 
 Useful links:
 \itemize{
   \item \url{https://github.com/ramiromagno/rutledge}
+  \item \url{https://rmagno.eu/rutledge/}
   \item Report bugs at \url{https://github.com/ramiromagno/rutledge/issues}
 }
 
