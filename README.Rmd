@@ -59,10 +59,10 @@ The `rutledge` data set comprises 240 amplification curves: 2 amplicons $\times$
 5 runs (plates) $\times$ 6 dilution levels $\times$ 4 replicates.
 
 ```{r dpi=300, fig.width=8, fig.height=8}
-rutledge %>%
+rutledge |>
   dplyr::count(plate, target, copies, replicate)
 
-rutledge %>%
+rutledge |>
   ggplot(mapping = aes(
     x = cycle,
     y = fluor,

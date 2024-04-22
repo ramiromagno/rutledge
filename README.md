@@ -56,7 +56,7 @@ rutledge
 #>  8 1     <NA>  SYBR  K1/K2  std                 1 41700000        1     8 0.0047
 #>  9 1     <NA>  SYBR  K1/K2  std                 1 41700000        1     9 0.0107
 #> 10 1     <NA>  SYBR  K1/K2  std                 1 41700000        1    10 0.0203
-#> # … with 10,790 more rows
+#> # ℹ 10,790 more rows
 ```
 
 The `rutledge` data set comprises 240 amplification curves: 2 amplicons
@@ -64,7 +64,7 @@ $\times$ 5 runs (plates) $\times$ 6 dilution levels $\times$ 4
 replicates.
 
 ``` r
-rutledge %>%
+rutledge |>
   dplyr::count(plate, target, copies, replicate)
 #> # A tibble: 240 × 5
 #>    plate target copies replicate     n
@@ -79,9 +79,9 @@ rutledge %>%
 #>  8 1     K1/K2    4170         4    45
 #>  9 1     K1/K2   41700         1    45
 #> 10 1     K1/K2   41700         2    45
-#> # … with 230 more rows
+#> # ℹ 230 more rows
 
-rutledge %>%
+rutledge |>
   ggplot(mapping = aes(
     x = cycle,
     y = fluor,
@@ -93,8 +93,10 @@ rutledge %>%
   labs(y = "Raw fluorescence", colour = "No. of copies", title = "Six-point 10-fold dilution series") +
   guides(color = guide_legend(override.aes = list(linewidth = 0.5), reverse = TRUE)) +
   facet_grid(rows = vars(plate), cols = vars(target))
-#> Warning: Removed 280 rows containing missing values (`geom_line()`).
-#> Warning: Removed 280 rows containing missing values (`geom_point()`).
+#> Warning: Removed 280 rows containing missing values or values outside the scale range
+#> (`geom_line()`).
+#> Warning: Removed 280 rows containing missing values or values outside the scale range
+#> (`geom_point()`).
 ```
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
